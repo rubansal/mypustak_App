@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+
+    >
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/grey_border_box"
+       android:padding="10dp"
+       android:id="@+id/relative"
+       >
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="140dp"
+           android:id="@+id/wishlist_thumb"
+           android:layout_marginTop="8dp"
+           android:background="#cdcdcd"
+
+           />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="25dp"
+           android:text="Category"
+           android:gravity="center"
+           android:layout_marginTop="2dp"
+           android:textSize="15sp"
+           android:background="@drawable/grey_border_box"
+           android:id="@+id/wishlist_category"
+           android:textColor="#616161"
+           android:layout_below="@+id/wishlist_thumb"
+
+           />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Bok Name"
+           android:gravity="center"
+           android:textSize="10sp"
+           android:maxLines="1"
+           android:id="@+id/wishlist_book"
+           android:textColor="#616161"
+           android:layout_below="@+id/wishlist_category"
+            />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="MRP"
+           android:gravity="center"
+           android:textSize="15sp"
+           android:id="@+id/wishlist_mrp"
+           android:textStyle="bold"
+           android:textColor="#616161"
+           android:layout_below="@+id/wishlist_book"
+            />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Author"
+           android:gravity="center"
+           android:textSize="15sp"
+           android:maxLines="1"
+           android:id="@+id/wishlist_author"
+           android:textColor="#616161"
+           android:layout_below="@+id/wishlist_mrp"
+            />
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="35dp"
+           android:layout_below="@id/wishlist_author"
+           android:id="@+id/wishlist_add_cart"
+           android:padding="7dp"
+           android:background="@drawable/grey_border_box"
+           >
+           <TextView
+               android:layout_width="130dp"
+               android:layout_height="30dp"
+               android:text="Add to cart"
+               android:layout_centerHorizontal="true"
+               android:textSize="15sp"
+               android:textColor="#2f2f2f"
+               android:textAlignment="center"
+
+               />
+       </RelativeLayout>
+
+
+
+   </RelativeLayout>
+
+
+
+
+</RelativeLayout>
